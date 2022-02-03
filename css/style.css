@@ -23,10 +23,12 @@ body {
   --btn-bck-color: #02897a;
   --background-color: #fff;
   --icon-color: #000;
+  --back-color: #fff;
 }
 
 .dark {
   --background-color: #1f2e35;
+  --back-color: #1f2e35;
   --hero-back: #29353b;
   --primary-color: #fff;
   --logo-color: #fff;
@@ -121,8 +123,9 @@ body {
   display: none;
 }
 .bx-x {
+  color: var(--primary-color);
   font-size: 35px;
-  color: #fff;
+  
 }
 
 @media screen and (max-width: 992px) {
@@ -143,7 +146,7 @@ body {
     right: -100%;
     width: 75vw;
     min-height: 100vh;
-    background-color: #173a56;
+    background-color: var(--back-color);
     flex-direction: column;
     justify-content: center;
     transition: all 1s ease;
@@ -158,12 +161,12 @@ body {
   }
 
   .nav__link {
-    color: #fff;
+    color: var(--primary-color);
     font-size: 25px;
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid var(--btn-bck-color);
   }
   .header__btn {
-    color: #fff;
+    color: var(--primary-color);
   }
   
   .header__mode {
@@ -287,9 +290,11 @@ body {
   }
 
   .hero__title {
+    width: 369px;
     text-align: center;
   }
   .hero__text {
+    width: 326px;
     text-align: center;
   }
   .hero__links {
