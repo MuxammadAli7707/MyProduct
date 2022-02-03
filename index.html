@@ -5,14 +5,75 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>MyProduct</title>
   <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="css/col.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+  <section id="hero" class="hero">
+    <header class="site-header header">
+      <div class="container">
+        <div class="header-row row middle between">
+          <div class="header__imgbox row middle">
+            <a href="#">
+              <img class="header__img" src="imgs/mypro-logo.svg" alt="logo-dark">
+            </a>
+            <a class="header__logo" href="#">product</a>
+          </div>
+          <nav id="navbar" class="header__nav nav row middle">
+            <ul class="nav__list row middle">
+              <li class="nav__item">
+                <a class="nav__link nav__link--active" href="#">product</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">customers</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">pricing</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">resources</a>
+              </li>
+            </ul>
+            <div class="header__btns row middle">
+              <a class="header__btn btn" href="#">sign in</a>
+              <a class="header__sbtn btn" href="#">sign up</a>
+              <button id="mode" class="header__mode">
+                <img class="lidar" src="imgs/darklight.svg" alt="darklight">
+              </button>
+            </div>
+          </nav>
+          <button class="header__menu">
+            <i id="menu" class='bx bx-menu'></i>
+          <button id="close" class="menu-close">
+            <i class='bx bx-x' ></i></button>
+          </button>
+        </div>
+      </div>
+    </header>
 
+    <div class="hero__main">
+      <div class="container">
+        <div class="hero__inner row middle between">
+          <div class="hero__entry">
+            <h2 class="hero__title">Work at the speed of thought</h2>
+            <p class="hero__text">Tools, tutorials, design and innovation experts, all in one place! The most intuitive way to imagine your next user experience.</p>
+            <div class="hero__links row middle">
+              <a class="hero__btn btn" href="#">Get started</a>
+              <img class="hero__play" src="imgs/mypro-play.svg" alt="mypro-play">
+              <a class="hero__video" href="#">Watch the Video</a>
+            </div>
+          </div>
+          <div class="hero__imgbox">
+            <img class="hero__img" src="imgs/amico.svg" alt="amico">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <script src="js/main.js"></script>
 </body>
 
