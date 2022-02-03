@@ -150,6 +150,7 @@ body {
     flex-direction: column;
     justify-content: center;
     transition: all 1s ease;
+    z-index: 100;
   }
 
   .nav__list {
