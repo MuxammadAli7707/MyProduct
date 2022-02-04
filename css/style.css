@@ -285,10 +285,6 @@ body {
     flex-direction: column-reverse;
   }
 
-  .hero__btn {
-    width: 0;
-  }
-
   .hero__img {
     width: 336px;
     margin-bottom: 21px;
