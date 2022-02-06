@@ -1,0 +1,469 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background-color);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  --hero-back: #fff;
+  --logo-color: #173a56;
+  --primary-color: #22343d;
+  --btn-bck-color: #02897a;
+  --background-color: #fff;
+  --icon-color: #000;
+  --back-color: #fff;
+  --border: #efefef;
+  --up-back: #22343d;
+  --up-color: #fff;
+  --second-page: #f7f7f7;
+  --third-page: #f5f5f5;
+  --join-back: #e5e5e5;
+  --background-image: url(../imgs/Bg.svg); 
+  --back-image: url(../imgs/baccc.svg);
+}
+
+.dark {
+  --background-color: #1f2e35;
+  --back-color: #1f2e35;
+  --hero-back: #29353b;
+  --primary-color: #fff;
+  --logo-color: #fff;
+  --icon-color: #fff;
+  --border: none;
+  --up-back: #fff;
+  --second-page: #23343d;
+  --third-page: #23343d;
+  --join-back: #23343d;
+  --up-color: #22343d;
+  --background-image: url(../imgs/Bg\ \(1\).svg);
+  --back-image: url(../imgs/baccc2.svg)
+
+}
+
+#hero {
+  background-color: transparent;
+  margin-bottom: 50px;
+}
+
+.site-header {
+  padding: 19px 0;
+}
+
+.header__img {
+  width: 40px;
+  height: 36px;
+  margin-right: 16px;
+}
+.header__logo {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 28px;
+  color: var(--logo-color);
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+.header__nav {
+  padding: 0;
+  margin: 0;
+}
+.nav__list {
+  list-style: none;
+}
+.nav__item {
+   margin-right: 35px;
+}
+.nav__link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: var(--primary-color);
+  text-decoration: none;
+  text-transform: capitalize;
+}
+.nav__link--active {
+  font-weight: 600;
+}
+
+.btn {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 10px 24px;
+  text-transform: capitalize;
+  background-color: var(--btn-bck-color);
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+}
+.header__btn {
+  border: 1px solid #bcd0e5;
+  border-radius: 4px;
+  color: var(--logo-color);
+  background-color: transparent;
+  margin-right: 24px;
+}
+.header__sbtn {
+  margin-right: 24px;
+}
+.header__mode {
+  border: none;
+  background-color: transparent;
+}
+
+.header__menu {
+  border: none;
+  background-color: transparent;
+  display: none;
+}
+
+.bx-menu {
+  font-size: 30px;
+  color: var(--icon-color);
+}
+
+.menu-close {
+  border: none;
+  background-color: transparent;
+  display: none;
+}
+.bx-x {
+  color: var(--primary-color);
+  font-size: 35px;
+  
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    width: 85%;
+  }
+  .site-header {
+    background-color: var(--background-color);
+    box-shadow: 0px -2px 8px rgba(0, 0, 0, 0.25);
+  }
+  .header__menu {
+    display: block;
+  }
+
+  .header__nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 75vw;
+    min-height: 100vh;
+    background-color: var(--back-color);
+    flex-direction: column;
+    justify-content: center;
+    transition: all 1s ease;
+    z-index: 100;
+  }
+
+  .nav__list {
+    flex-direction: column;
+  }
+
+  .nav__item {
+    margin-bottom: 30px;
+  }
+
+  .nav__link {
+    color: var(--primary-color);
+    font-size: 25px;
+    border-bottom: 2px solid var(--btn-bck-color);
+  }
+  .header__btn {
+    color: var(--primary-color);
+  }
+  
+  .header__mode {
+    margin: 0 auto;
+  }
+
+  .show {
+    top: 0;
+    right: 0;
+    transition: all 1s ease;
+  }
+  .hide {
+    display: none;
+  }
+
+  .menu-close {
+    z-index: 200;
+  }
+  .show-it {
+    display: block;
+  }
+
+}
+
+.comapny__title {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 60px;
+    color: var(--primary-color);
+    margin-bottom: 50px;
+    text-align: center;
+}
+.company__list {
+    list-style: none;
+}
+
+.comapny__item {
+    margin-right: 64px;
+}   
+.air__logo {
+    width: 160px;
+    height: 50px;
+}
+.google__logo {
+    width: 146px;
+    height: 50px;
+}
+.micro__logo {
+    width: 213px;
+    height: 44px;
+}
+.fedex__logo {
+    width: 140px;
+    height: 42px;
+}
+
+@media screen and (max-width: 992px) {
+    .company__list {
+        display: flex;
+        flex-flow: row;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .company__list {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .comapny__item {
+        margin-bottom: 65px;
+    }
+    .micro__logo {
+        width: 164px;
+        height: 34px;
+    }
+}
+
+#company {
+    margin-bottom: 117px;
+}
+
+
+.choose__main {
+    padding-top: 24px;
+}
+.choose__title {
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 51px;
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 50px;
+}
+.choose__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    padding-bottom: 65px;
+}
+.choose__item {
+    padding: 34px 38px;
+    border: 1px solid #dedede;
+    border-radius: 8px;
+}
+
+.choose__item:not(:last-child) {
+    margin-right: 30px;
+}
+.choose__img {
+    margin-bottom: 32px;
+}
+.choose__desc {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 33px;
+    letter-spacing: 0.1px;
+    color: var(--primary-color);
+    margin-bottom: 16px;
+    width: 294px;
+}
+.choose__text {
+    font-size: 16px;
+    line-height: 27px;
+    letter-spacing: 0.2px;
+    color: var(--primary-color);
+    width: 275px;
+}
+
+#choose {
+    background-color: var(--third-page);
+    margin-bottom: 100px;
+}
+
+@media screen and (max-width: 992px) {
+    .choose__list {
+        flex-flow: column wrap;
+    }
+    .choose__item:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+}
+
+.work__title {
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 51px;
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 73px;
+}
+.word__list {
+    list-style: none;
+}
+.work__item {
+    margin-bottom: 100px;
+}
+
+.work__item:nth-child(2) {
+    flex-direction: row-reverse;
+}
+.work__img {
+    width: 500px;
+    height: 279px;
+}
+
+.work__intro {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    margin-bottom: 16px;
+}
+.work__desc {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: var(--primary-color);
+    margin-bottom: 16px;
+}
+.work__text {
+    font-size: 16px;
+    line-height: 28px;
+    color: var(--primary-color);
+    width: 438px;
+}
+
+.work__btn {
+    padding: 11px 18px;
+    border: none;
+}
+
+#work {
+    margin-bottom: 126px;
+}
+
+@media screen and (max-width: 992px) {
+    .work__list {
+        align-items: center;
+        justify-content: center;
+    }
+    .work__item {
+        align-items: center;
+        justify-content: center;
+    }
+    .work__img {
+        margin-bottom: 80px;
+    }  
+}
+
+@media screen and (max-width: 768px) {
+    .work__text {
+        width: 355px;
+    }
+    .work__img {
+        width: 350px;
+        height: 195px;
+    }
+ 
+}
+
+.join__main {
+    padding-top: 35px;
+}
+.join__title {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 48px;
+    color: var(--primary-color);
+    width: 537px;
+    margin-bottom: 93px; 
+}
+.join__list {
+    list-style: none;
+}
+.join__img {
+    margin-bottom: 27px;
+}
+.join__desc {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: var(--primary-color);
+    margin-bottom: 16px;
+}
+.join__link {
+    font-size: 18px;
+    line-height: 32px;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+.list {
+    margin-bottom: 12px;
+}
+.join__text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    color: var(--primary-color);
+    padding-bottom: 45px;
+}
+
+#join {
+    padding-bottom: 150px;
+}
+
+@media screen and (max-width: 768px) {
+    .join__list {
+        flex-direction: column;
+    }
+    .join__title {
+        width: 351px;
+    }
+}
