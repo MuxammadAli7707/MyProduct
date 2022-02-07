@@ -57,7 +57,7 @@ body {
 }
 
 #hero {
-  background-color: transparent;
+  background-color: var(--hero-back);
   margin-bottom: 50px;
 }
 

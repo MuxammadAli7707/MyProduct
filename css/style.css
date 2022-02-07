@@ -52,7 +52,6 @@ body {
 
 #hero {
   background-color: var(--hero-back);
-  padding-bottom: 43px;
 }
 
 .site-header {
@@ -106,6 +105,7 @@ body {
   border-radius: 4px;
   color: #fff;
   cursor: pointer;
+  border: none;
 }
 .header__btn {
   border: 1px solid #bcd0e5;
@@ -667,7 +667,7 @@ body {
 
 @media screen and (max-width: 768px) {
   .contents__text {
-    width: 349px;
+    width: 100%;
     margin: 0 auto;
     padding-bottom: 30px;
   }
@@ -982,6 +982,7 @@ body {
   line-height: 30px;
   text-align: center;
   color: var(--primary-color);
+  margin-bottom: 30px;
 }
 
 @media screen and (max-width: 768px) {

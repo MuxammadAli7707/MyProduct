@@ -39,7 +39,7 @@ body {
 .dark {
   --background-color: #1f2e35;
   --back-color: #1f2e35;
-  --hero-back: #29353b;
+  --hero-back: #23343d;
   --primary-color: #fff;
   --logo-color: #fff;
   --icon-color: #fff;
@@ -322,7 +322,6 @@ body {
   background-size: cover;
   width: 528px;
   height: 392px;
-  background-size: cover;
 }
 
 @media screen and (max-width: 992px) {
