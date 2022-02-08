@@ -93,6 +93,9 @@ body {
 .great__email:focus {
     outline: none;
 }
+.great__email::placeholder {
+    color: var(--primary-color);
+}
 .great__link {
     padding: 16px 24px;
     border-radius: 100px;
